@@ -1,0 +1,23 @@
+// Code Snippet
+ 
+let username = prompt("Register your Username"); // Declare a var that will hold the uname
+let password = prompt("Register your passcode"); // Declare a var that will hold the pword
+let rePassword = prompt("Re-enter your passcode"); // Declare a variable that will hold the re-pword
+
+if (password === rePassword) { // Compare the Registered Password and Re-entered Password
+    alert("Congratulations! You have successfully registered."); // Window Pop-up to Congratulate the user for registering.
+    
+    let loginUsername = prompt("Username: "); // Declare a variable that will hold the uname on LogIn
+    
+    if (loginUsername === username) { // Compare the registered uname and entered uname on LogIn
+        let loginPassword = prompt("Password: "); // If correct uname, declare a var that will hold the encoded password on LogIn
+        
+        (loginPassword === password) // Compare the registered pword and entered pword on LogIn
+            ? alert("Welcome to DSA, " + username) // Window Pop-up to Congratulate the user for successful LogIn.
+            : alert("Incorrect Password, Re-run the code!"); // Window Pop-up to Inform the user of the incorrect passcode
+    } else { 
+        alert("Incorrect Username, Re-run the code!"); // Window Pop-up to Inform the user of the incorrect username
+    }
+} else { 
+    alert("Password does not Match, Re-run the code!"); // Window Pop-up to Inform the regpCode and re-entered pCode does not match
+}
