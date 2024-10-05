@@ -1,0 +1,50 @@
+//Code Transformation 
+// Define variables
+let age = 19; // example value
+let genAverage = 85; // example value
+
+// Condition statement
+console.log((age >= 18 && genAverage >= 83)); // condition 
+
+// To log
+if (age >= 18 && genAverage >= 83) {
+  console.log("You may enter College under BSCS Program");
+} else {
+  console.log("Both conditions may have not met and not allowed to enroll");
+}
+//b.
+console.log((subject === "DSA" && grade >= 80) 
+  ? "You may enroll Application Development" 
+  : (subject === "Math101" && grade <= 80) 
+    ? "You may enroll Calculus" 
+    : "You have to enroll DSA and pass to enroll AD and Math101 and pass to enroll Calculus");
+    
+//Convert Conditional Ternary into Regular Conditional Statement
+
+if (age >= 18) {
+    console.log("You may now Register as a Voter for Elections 2025");
+} else {
+    console.log("You are too young register as a voter for Elections 2025");
+}
+
+//b.
+
+if (genAverage >= 85) {
+    console.log("You may enroll in all Course Programs");
+} else if (genAverage < 85 && genAverage > 82) {
+    console.log("You may enroll in any Course Program except in CTE, SCJE, CHS");
+} else {
+    console.log("You may enroll in any Course Program except CTE, SCJE, CHS, CCS");
+}
+ //Convert For Loop into While Loop
+
+let fname = "Jose Cruz"; 
+let i = 0; 
+
+while (i < fname.length) {
+    let c = 2 + i; 
+    let nLengthCounterTwo = fname.length - c; 
+    console.log(fname); 
+    console.log("Iterations Name was Printed: " + i); 
+    i++;
+}
