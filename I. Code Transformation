@@ -1,7 +1,7 @@
 //Code Transformation 
 // Define variables
 let age = 19; // example value
-let genAverage = 85; // example value
+let genAverage = 84; // example value
 
 // Condition statement
 console.log((age >= 18 && genAverage >= 83)); // condition 
